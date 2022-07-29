@@ -17,15 +17,15 @@ IniRead, CLICKPOS_Y2, .\click_crawring.ini, CLICKPOS, Y2
 IniRead, CLICKPOS_Y3, .\click_crawring.ini, CLICKPOS, Y3
 IniRead, CLICKPOS_Y4, .\click_crawring.ini, CLICKPOS, Y4
 
-+^D::
++^!D::
 If(id==0){
-    Click,Left,%CLICKPOS_X1%,%CLICKPOS_Y1%
+    MouseClick,Left,%CLICKPOS_X1%,%CLICKPOS_Y1%, , 0
 }else If(id==1){
-    Click,Left,%CLICKPOS_X2%,%CLICKPOS_Y2%
+    MouseClick,Left,%CLICKPOS_X2%,%CLICKPOS_Y2%, , 0
 }else If(id==2){
-    Click,Left,%CLICKPOS_X3%,%CLICKPOS_Y3%
+    MouseClick,Left,%CLICKPOS_X3%,%CLICKPOS_Y3%, , 0
 }else If(id==3){
-    Click,Left,%CLICKPOS_X4%,%CLICKPOS_Y4%
+    MouseClick,Left,%CLICKPOS_X4%,%CLICKPOS_Y4%, , 0
 }
 id+=1
 if(id >3){ 
